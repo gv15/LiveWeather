@@ -6,7 +6,7 @@ function locationSuccess(pos){
     getWeather(pos.coords.latitude, pos.coords.longitude);
 }
 function locationFail(err){
-
+    document.write("<h1>Failed to fetch location details</h1>");
 }
 function getWeather(lat, long){
     console.log(lat, long)
